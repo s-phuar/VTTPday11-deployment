@@ -39,6 +39,17 @@ public class ImageController {
   
     //  }
 
+    //picture_of_the_day html
+    // <h1>Picture of the Day</h1>
+
+    // <hr>
+ 
+    // <div>
+    //    <img data-th-src="${imageOfTheDay}" >
+    // </div>
+
+
+
     @GetMapping("/randomised") //maps to /RandomImages/randomised endpoint
     public ResponseEntity<byte[]> getImage() throws IOException{
         String  imagePath = "src/main/resources/static/images/";
