@@ -6,15 +6,19 @@ public class lesson {
 
 
 //http protocol, get, post, head, delete, etc.
+    //VERB NOUN (GET /images etc.)
+    //noun comes after the server (server e.g. wikipedia.com, noun being specific articles e.g /caving)
 //CGI program for dynamic html generation
-//important sprinboot dependencies - Spring Boot DevTools/Spring Web/ Thymeleaf
+//3 core http properties
+    //1. request response
+    //2. server cannot make unsolicited requests to client. Unless server push
+    //3. stateless. If client makes consecutive calls to the server, the server does not know their relation(cannot correlate 2 calls from same client) nor remember the state of previous calls
+        //stateful connection is something like our shopping cart with login functionality (much more difficult to scale vertically)
 
+//important sprinboot dependencies - Spring Boot DevTools/Spring Web/ Thymeleaf
 //start spring boot application, while inside the root directory with the pom.xml
     //mvn clean spring-boot:run
 
-
-
-        
 //how to deploy
     //rmb to set the pom jdk to 21
     //use normal command prompt

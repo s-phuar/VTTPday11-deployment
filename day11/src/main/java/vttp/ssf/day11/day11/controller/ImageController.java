@@ -3,7 +3,6 @@ package vttp.ssf.day11.day11.controller;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.security.SecureRandom;
 import java.util.List;
 import java.util.Random;
 import java.util.stream.Collectors;
@@ -26,7 +25,7 @@ public class ImageController {
     // @RequestMapping
 
     // @GetMapping(path={"/", "/index.html"})
-    // public String getIndex(Model model) {
+    // public String getIndex(Model model) { //Model model is used to pass any data to view via model.addattribute
     //    model.addAttribute("imageOfTheDay", getPictureOfTheDay());
     //    return "picture_of_the_day";
     // }
@@ -35,7 +34,7 @@ public class ImageController {
 
     //     Random rnd = new SecureRandom();
     //     int idx = rnd.nextInt(Constants.PICTURES.length);
-    //     return "/images/%s".formatted(Constants.PICTURES[idx]);
+    //     return "/images/%s".formatted(Constants.PICTURES[idx]); //image path of the randomly chosen image
   
     //  }
 
